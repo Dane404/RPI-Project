@@ -3,7 +3,7 @@ import time
 motorPins = (12,16,20,21)
 motors = list(map(lambda pin: OutputDevice(pin), motorPins))
 while True:
-    for i in 4:
+    for i in (0,4,1):
         if i>=1:
             motors[i-1].off()
             motors[i].on()
